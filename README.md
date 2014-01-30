@@ -25,7 +25,8 @@ Practice with Yeoman/angular-generator and Angular Services
   { title: 'Moe says...', body: '"Why I oughta..."', author: 'Moe'},
   { title: 'Curly says...', body: '"Nyuk Nyuk Nyuk!"', author: 'Curly'},
   { title: 'Moe says...', body: '"You nitwit!"', author: 'Moe'},
-  { title: 'Larry says...', body: '"What\'s the idea?"', author: 'Larry'},
+  { title: 'Larry says...', body: '"What\'s the idea?"', author: 'Larry'}
+]
 
 ```
 * Wrap the entire main.html with a div that references your Blog Controller.
