@@ -6,7 +6,8 @@ Practice with Yeoman/angular-generator and Angular Services
 ##Step 1: Build the scaffold
 * Make sure Yeoman is installed `npm install -g yo`
 * Install angular-generator `npm install -g generator-angular`. Remember, Yeoman uses generators to build certain types of projects. If we want to build an Angular project, we need the Angular Generator.
-* Follow the prompts (No SASS/Compass, Yes Bootstrap, no other Angular modules)
+* Create the project. `yo angular stooger-bloggerz`
+  * Follow the prompts (No SASS/Compass, Yes Bootstrap, no other Angular modules)
 * Make sure the bower dependencies are there `bower install`
 * Run `grunt serve` to see your new project in action!
 (Try running `grunt test` to get an idea of how testing works with Angular. There's not much there now, but soon we'll dive more into this.)
@@ -27,7 +28,6 @@ Practice with Yeoman/angular-generator and Angular Services
   { title: 'Moe says...', body: '"You nitwit!"', author: 'Moe'},
   { title: 'Larry says...', body: '"What\'s the idea?"', author: 'Larry'}
 ]
-
 ```
 * Wrap the entire main.html with a div that references your Blog Controller.
 * Add a div ng-repeat that shows the blog title, body, and author for each post.
