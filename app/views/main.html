@@ -1,0 +1,17 @@
+<div ng-controller="BlogCtrl">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li ng-repeat="author in authors" ng-click="changeAuthorFilter(author)"><a href="" ng-click="changeAuthorFilter('Larry')">{{author}}</a></li>
+      <li><a href="" ng-click="changeAuthorFilter('all')">All</a></li>
+    </ul>
+    <h3 class="text-muted">bloggerz</h3>
+  </div>
+  <div class="blog">
+    <h4>Latest Posts</h4>
+    <div ng-repeat="post in blogPosts | filter:authorFilter">
+      <h5>{{post.title}}</h5>
+      <p>{{post.body}}</p>
+      <p class="author">&mdash;{{post.author}}</p>
+    </div>
+  </div>
+</div>
