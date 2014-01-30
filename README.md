@@ -1,4 +1,4 @@
-bloggerz
+stooge-bloggerz
 ========
 
 Practice with Yeoman/angular-generator and Angular Services
