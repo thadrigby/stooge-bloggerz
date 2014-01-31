@@ -6,7 +6,7 @@ Practice with Yeoman/angular-generator and Angular Services
 ##Step 1: Build the scaffold
 * Make sure Yeoman is installed `npm install -g yo`
 * Install angular-generator `npm install -g generator-angular`. Remember, Yeoman uses generators to build certain types of projects. If we want to build an Angular project, we need the Angular Generator.
-* Create the project. `yo angular stooger-bloggerz`
+* Create the project. `yo angular stooge-bloggerz`
   * Follow the prompts (No SASS/Compass, Yes Bootstrap, no other Angular modules)
 * Make sure the bower dependencies are there `bower install`
 * Run `grunt serve` to see your new project in action!
