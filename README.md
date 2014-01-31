@@ -8,11 +8,11 @@ Practice with Yeoman/angular-generator and Angular Services
 * Install angular-generator `npm install -g generator-angular`. Remember, Yeoman uses generators to build certain types of projects. If we want to build an Angular project, we need the Angular Generator.
 * Create the project. `yo angular stooge-bloggerz`
   * Follow the prompts (No SASS/Compass, Yes Bootstrap, no other Angular modules)
-* Make sure the bower dependencies are there `bower install`
 * Run `grunt serve` to see your new project in action!
 (Try running `grunt test` to get an idea of how testing works with Angular. There's not much there now, but soon we'll dive more into this.)
 
 ##Step 2: Structure the HTML
+* You can see where the HTML is included in the app by looking at the index.html file inside the app/ directory. Look at the line that has the `ng-include` to get a clue as to where to find the HTML for this project.
 * Change the nav to have `<li>` elements for each of our bloggers, "Larry," "Curly," and "Moe." (When you save the file, if `grunt serve` is still running you'll see the changes automatically refresh in the browser. Slick, no?)
 * Take out the jumbotron div, the row marketing div, and the footer. (You should only have the header now)
 * Add a div with class "blog" that contains a header, "Latest Posts"
