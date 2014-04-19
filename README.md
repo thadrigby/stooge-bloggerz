@@ -1,4 +1,4 @@
-stooge-bloggerz
+<!-- stooge-bloggerz
 ========
 
 Practice with Yeoman/angular-generator and Angular Services
@@ -41,7 +41,7 @@ Practice with Yeoman/angular-generator and Angular Services
 * Have the Author service return an object with a `getAuthors` method, which returns an array of our authors
 * Implement the author service in the HTML nav to show all of the authors from the service.
 
-##Step 6: Black Diamond
-* Add a filter for the posts that will allow us to filter by author
+ --><!-- ##Step 6: Black Diamond
+* Add a filter for the posts that will allow us to filter by author -->
 * Have the authors in the nav automatically change the filter on click (hint: use a function in the controller that manipulates the filter based on a passed parameter)
-* Include another li element for "All" authors that clears the filter so all posts are shown
+<!-- * Include another li element for "All" authors that clears the filter so all posts are shown -->

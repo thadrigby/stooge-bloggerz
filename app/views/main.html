@@ -1,0 +1,32 @@
+<div ng-controller='BlogCtrl'>
+
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+  <!--     <li class="active"><a ng-href="#">Home</a></li> -->
+      <li class='active'><a ng-href="#" ng-click='filters.author = " "'>All</a></li>
+      <li ng-repeat="name in blogAuthors"><a ng-href='#' ng-click='filters.author = name'>{{name}}</a></li>
+
+
+<!--       <li><a ng-href="#">Larry</a></li>
+      <li><a ng-href="#">Curly</a></li>
+      <li><a ng-href="#">Moe</a></li> -->
+    </ul>
+    <h3 class="text-muted">stooge bloggerz</h3>
+  </div>
+
+<!-- {{blogPosts}}
+<br>
+<br>
+{{blogAuthors}} -->
+
+  <div class='blog'>
+    <h3>Latest Posts</h3>
+    <div ng-repeat='post in blogPosts | filter:filters.author'>
+      {{post.title}}
+      {{post.body}}
+      {{post.author}}
+
+    </div>
+
+  </div>
+</div>
