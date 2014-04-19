@@ -1,10 +1,11 @@
 <div ng-controller='BlogCtrl'>
 
   <div class="header">
+    <div>theFilter: {{theFilter}}</div>
     <ul class="nav nav-pills pull-right">
   <!--     <li class="active"><a ng-href="#">Home</a></li> -->
-      <li class='active'><a ng-href="#" ng-click='filters.author = " "'>All</a></li>
-      <li ng-repeat="name in blogAuthors"><a ng-href='#' ng-click='filters.author = name'>{{name}}</a></li>
+      <li class='active'><a ng-href="#" ng-click='allFilterClicked()'>All</a></li>
+      <li ng-repeat="name in blogAuthors"><a ng-href='#' ng-click='theFilter.author = name'>{{name}}</a></li>
 
 
 <!--       <li><a ng-href="#">Larry</a></li>
@@ -19,13 +20,33 @@
 <br>
 {{blogAuthors}} -->
 
+<input type='text' placeholder='search blog text' ng-model='theFilter.body'>
+
   <div class='blog'>
     <h3>Latest Posts</h3>
-    <div ng-repeat='post in blogPosts | filter:filters.author'>
+    <div ng-repeat='post in blogPosts | filter:theFilter'>
       {{post.title}}
       {{post.body}}
       {{post.author}}
 
+    </div>
+  <br />
+  <br />
+    <h3>Add New Post</h3>
+    <div>
+      <input type='text' placeholder='Who says...' ng-model='newPostTitle'>
+    </div>
+    <br />
+    <div>
+      <input type='text' placeholder='Author' ng-model='newPostAuthor'>
+    </div>
+    <br />
+    <div>  
+      <textarea rows ='10' cols='100' placeholder='Body' ng-model='newPostBody'></textarea>
+    </div>
+    <br />
+    <div>
+      <button class='btn' ng-click='submitNewPost()'>Submit Post</button>
     </div>
 
   </div>
